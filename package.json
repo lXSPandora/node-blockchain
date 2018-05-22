@@ -30,8 +30,10 @@
     "crypto-js": "^3.1.9-1",
     "dotenv-safe": "^5.0.1",
     "fastify": "^1.5.0",
-    "lint-staged": "^7.1.2"
+    "lint-staged": "^7.1.2",
+    "pre-commit": "^1.2.2"
   },
+  "pre-commit": "lint:staged",
   "lint-staged": {
     "*.js": [
       "yarn prettier",
