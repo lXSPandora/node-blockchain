@@ -1,0 +1,37 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain implementation using node.js",
+  "main": "src/index.js",
+  "author": "lXSPandora",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.4",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.12.0",
+    "flow-bin": "^0.72.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.4",
+    "jest-cli": "^22.4.4",
+    "nodemon": "^1.17.4",
+    "prettier": "^1.12.1"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "dotenv-safe": "^5.0.1",
+    "fastify": "^1.5.0"
+  },
+  "scripts": {
+    "start": "babel-node src/index.js"
+  }
+}
