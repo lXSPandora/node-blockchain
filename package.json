@@ -29,9 +29,21 @@
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "dotenv-safe": "^5.0.1",
-    "fastify": "^1.5.0"
+    "fastify": "^1.5.0",
+    "lint-staged": "^7.1.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn prettier",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "scripts": {
-    "start": "babel-node src/index.js"
+    "lint": "eslint src/**",
+    "lint:staged": "lint-staged",
+    "start": "babel-node src/index.js",
+    "prettier": "prettier --write --single-quote true --trailing-comma all --print-width 120",
+    "prettier:all": "prettier --write --single-quote true --trailing-comma all --print-width 120 --write 'src/**/*.js'"
   }
 }
