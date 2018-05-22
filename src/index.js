@@ -10,7 +10,7 @@ type NewBlock = {
   nonce: number,
   calculateHash: () => string,
   mineBlocks: (difficulty: number) => void,
-}
+};
 
 class Block {
   index: number;
@@ -29,7 +29,8 @@ class Block {
     this.nonce = 0;
   }
 
-  calculateHash = () => SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
+  calculateHash = () =>
+    SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
 
   mineBlocks = (difficulty: number) => {
     while (this.hash.substring(0, difficulty) !== Array(difficulty + 1).join('0')) {
@@ -111,4 +112,3 @@ const isValid = luizCoin.isChainValid();
 console.log(`Is My Chain Valid? ${isValid ? 'Yes' : 'No'}`);
 
 console.log('Here`s your chain: ', JSON.stringify(luizCoin, null, 2));
-
