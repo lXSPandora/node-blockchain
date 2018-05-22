@@ -1,5 +1,5 @@
 {
-  "name": "blockchain",
+  "name": "node-blockchain",
   "version": "1.0.0",
   "description": "Blockchain implementation using node.js",
   "main": "src/index.js",
