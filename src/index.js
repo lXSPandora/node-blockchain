@@ -134,10 +134,10 @@ luizCoin.createTransaction(new Transaction('address2', 'address1', 50));
 console.log('\n Starting the miner...');
 luizCoin.minePendingTransactions('luiz-address');
 
-console.log('\nBalance of xavier is', luizCoin.getAddressBalance('luiz-address'));
+console.log('\nBalance of luiz is', luizCoin.getAddressBalance('luiz-address'));
 
 console.log('\n Starting the miner again...');
 luizCoin.minePendingTransactions('luiz-address');
 
-console.log('\nBalance of xavier is', luizCoin.getAddressBalance('luiz-address'));
+console.log('\nBalance of luiz is', luizCoin.getAddressBalance('luiz-address'));
 // console.log('Here`s your chain: ', JSON.stringify(luizCoin, null, 2));
